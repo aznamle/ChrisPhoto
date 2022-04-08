@@ -1,0 +1,21 @@
+{
+  "id": "a47ca561-a7ad-498b-b4f3-3937b9e6062a",
+  "uid": "minima-facere-atque",
+  "type": "homepage",
+  "data": {
+    "title": [
+      {
+        "type": "paragraph",
+        "text": "Veniam tempor pariatur consequat nostrud amet eu ut sit culpa et ex consectetur id quis aliqua. Eiusmod sunt ex consectetur fugiat reprehenderit occaecat mollit duis velit elit anim officia ipsum tempor.",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Tempor quis nostrud reprehenderit aliqua sunt minim ex laboris nostrud proident adipisicing. Consequat labore id consequat in id minim dolor officia tempor. Sit enim ut elit aute duis ullamco nisi labore ea in aliquip ea sint minim laborum.",
+        "spans": []
+      }
+    ]
+  }
+}

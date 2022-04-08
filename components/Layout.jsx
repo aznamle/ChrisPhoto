@@ -1,6 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 
+import Header from './Header'
+import Footer from './Footer'
+
 const Layout = ({ children }) => {
   return (
     <>
@@ -8,13 +11,13 @@ const Layout = ({ children }) => {
             <title>Chris Photography</title>
         </Head>
         <header>
-            Header
+            <Header />
         </header>
         <main>
             {children}
         </main>
         <footer>
-            Footer
+            <Footer />
         </footer>
     </>
   )

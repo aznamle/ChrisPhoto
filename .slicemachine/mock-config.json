@@ -1,6 +1,7 @@
 {
   "_cts": {
-    "homepage": {}
+    "homepage": {},
+    "menu": {}
   },
   "slices": {
     "SimpleText": {}

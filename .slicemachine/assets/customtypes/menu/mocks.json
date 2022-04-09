@@ -1,6 +1,83 @@
 {
-  "id": "9b15d82e-4592-4cbb-ab20-39df46073297",
-  "uid": "tempore-voluptas-voluptatum",
+  "id": "4a129bf2-28b5-45fd-8669-861d90772da8",
+  "uid": "dolorum-et-dignissimos",
   "type": "menu",
-  "data": {}
+  "data": {
+    "title": [
+      {
+        "type": "heading1",
+        "text": "Integrate B2B models",
+        "spans": []
+      }
+    ],
+    "menuLinks": [
+      {
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "Excepteur minim magna tempor nostrud labore.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "label": [
+          {
+            "type": "paragraph",
+            "text": "Magna culpa cillum deserunt esse qui occaecat esse et. Ullamco sit aliquip sint reprehenderit non Lorem labore laboris duis.",
+            "spans": []
+          }
+        ],
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      }
+    ],
+    "portfolioLinks": [
+      {
+        "portfolioTitle": [
+          {
+            "type": "paragraph",
+            "text": "Dolor duis labore ullamco tempor voluptate cupidatat incididunt Lorem sint commodo duis minim.",
+            "spans": []
+          }
+        ],
+        "Link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "portfolioTitle": [
+          {
+            "type": "paragraph",
+            "text": "Cupidatat nostrud deserunt commodo anim mollit laboris ad anim minim laborum ex non. Proident ex est laborum minim non exercitation anim ut Lorem cillum pariatur quis Lorem minim. Occaecat nulla aliquip non occaecat tempor qui do Lorem ex do aliquip.",
+            "spans": []
+          }
+        ],
+        "Link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "portfolioTitle": [
+          {
+            "type": "paragraph",
+            "text": "Ullamco occaecat nisi nostrud minim deserunt anim dolore occaecat ea ipsum veniam excepteur anim.",
+            "spans": []
+          }
+        ],
+        "Link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      }
+    ]
+  }
 }

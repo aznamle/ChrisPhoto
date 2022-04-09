@@ -4,6 +4,63 @@
   "repeatable": false,
   "status": true,
   "json": {
-    "Main": {}
+    "Main": {
+      "title": {
+        "type": "StructuredText",
+        "config": {
+          "placeholder": "Menu title...",
+          "single": "heading1"
+        }
+      },
+      "menuLinks": {
+        "type": "Group",
+        "config": {
+          "label": "Menu Links",
+          "fields": {
+            "label": {
+              "type": "StructuredText",
+              "config": {
+                "single": "paragraph",
+                "label": "Link Label",
+                "placeholder": "Link Label..."
+              }
+            },
+            "link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "Select a Link...",
+                "select": null
+              }
+            }
+          }
+        }
+      },
+      "portfolioLinks": {
+        "type": "Group",
+        "config": {
+          "label": "Portfolio Links",
+          "fields": {
+            "portfolioTitle": {
+              "type": "StructuredText",
+              "config": {
+                "label": "Portfolio Title",
+                "placeholder": "",
+                "allowTargetBlank": true,
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+              }
+            },
+            "Link": {
+              "type": "Link",
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "select": null
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

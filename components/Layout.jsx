@@ -6,20 +6,25 @@ import Footer from './Footer'
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className='flex'>
         <Head>
             <title>Chris Photography</title>
         </Head>
-        <header>
-            <Header />
-        </header>
-        <main>
-            {children}
-        </main>
+        <div className='w-1/5'>
+            <header>
+                <Header />
+            </header>
+        </div>
+        <div className='w-4/5'>
+            <main>
+                {children}
+            </main>
+
         <footer>
             <Footer />
         </footer>
-    </>
+        </div>
+    </div>
   )
 }
 

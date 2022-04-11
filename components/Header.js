@@ -1,8 +1,8 @@
 
 const Header = ({ menu }) => {
   return (
-    <div className='flex h-full'>
-        <div className='mx-auto w-full '>
+    <div className='w-full h-full flex items-center justify-center'>
+        <div className='mx-auto '>
             <div>
             <span className='text-2xl'>PHOTOGRAPHY</span>
             </div>

@@ -3,10 +3,8 @@ import { SliceZone } from "@prismicio/react";
 import { createClient } from "../prismicio"
 import { components } from "../slices/index.js";
 
-export default function Home({ homePage, slices}) {
-
-  console.log(slices)
-
+export default function Home({ data, slices}) {
+  
   return (
     <div>
       <SliceZone slices={slices} components={components} />
@@ -18,12 +16,12 @@ export async function getServerSideProps({ previewData }) {
 
   const client = createClient({ previewData })
 
-  const homePage = await client.getSingle('homepage')
+  const data = await client.getSingle('homepage')
 
   return {
     props: { 
-      homePage: homePage.data,
-      slices: homePage.data.slices,
+      homePage: data.data,
+      slices: data.data.slices,
     }, 
   }
 }

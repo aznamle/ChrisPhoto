@@ -6,16 +6,16 @@ import Footer from './Footer'
 
 const Layout = ({ children }) => {
   return (
-    <div className='flex'>
+    <div className='flex flex-row h-full'>
         <Head>
             <title>Chris Photography</title>
         </Head>
-        <div className='w-1/5'>
-            <header>
+        <div >
+            <div className='relative h-screen flex w-72 overflow-y-auto'>
                 <Header />
-            </header>
+            </div>
         </div>
-        <div className='w-4/5'>
+        <div className='max-w-full h-full flex relative overflow-y-auto'>
             <main>
                 {children}
             </main>

@@ -12,20 +12,18 @@ const Layout = ({ children }) => {
         </Head>
         <div className='flex-1 flex flex-col overflow-hidden'>
             <div className='flex h-full'>
-                <nav className='flex w-1/4'>
+                <nav className='flex w-2/3'>
                     <div className='w-full flex mx-auto p-6'>
                         <div className='w-full h-full flex items-center justify-center text-gray-900'>
                             <Header />
                         </div>
                     </div>
                 </nav>
-                <main className='w-full overflow-x-hidden overflow-y-auto px-6'>
-                    <div className='flex mx-auto p-2'>
-                        {children}
-                    </div>
-                    <footer className='flex mx-auto items-center justify-center h-24'>
-                        <Footer />
-                    </footer>
+                <main className='p-24 overflow-x-hidden overflow-y-auto'>
+                    {children}
+                <footer className='flex mx-auto items-center justify-center h-24'>
+                    <Footer />
+                </footer>
                 </main>
             </div>
         </div>

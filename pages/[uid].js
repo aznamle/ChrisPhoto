@@ -23,7 +23,7 @@ export async function getStaticProps({ params, previewData }) {
   
     return {
       props: {
-        slices: page.data.body,
+        slices: page.data,
       },
     };
   }

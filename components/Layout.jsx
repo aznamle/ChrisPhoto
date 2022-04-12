@@ -6,8 +6,6 @@ import Footer from './Footer'
 
 const Layout = ({ children, menu }) => {
 
-console.log(menu)
-
   return (
     <div className=''>
         <Head>

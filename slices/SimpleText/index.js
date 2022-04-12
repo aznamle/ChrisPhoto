@@ -5,9 +5,9 @@ import Gallery from '../../components/Gallery'
 const SimpleText = ({ slice }) => {
   
   return (
-    <div>
+    <>
       <Gallery slice={slice} />
-    </div>
+    </>
   )
 }
 

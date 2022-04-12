@@ -3,12 +3,14 @@ import { SliceZone } from "@prismicio/react";
 import { createClient } from "../prismicio"
 import { components } from "../slices/index.js";
 
-export default function Home({ data, slices}) {
+import Layout from "../components/Layout";
+
+export default function Home({ menu, data, slices}) {
 
   return (
-    <div>
+    <Layout menu={menu}>
       <SliceZone slices={slices} components={components} />
-    </div>
+    </Layout>
   )
 }
 
@@ -16,10 +18,12 @@ export async function getServerSideProps({ previewData }) {
 
   const client = createClient({ previewData })
 
+  const menu = await client.getSingle("menu");
   const data = await client.getSingle('homepage')
 
   return {
     props: { 
+      menu: menu,
       data: data.data,
       slices: data.data.slices,
     }, 

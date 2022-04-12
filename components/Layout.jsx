@@ -4,7 +4,10 @@ import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
 
-const Layout = ({ children }) => {
+const Layout = ({ children, menu }) => {
+
+console.log(menu)
+
   return (
     <div className=''>
         <Head>
@@ -13,7 +16,7 @@ const Layout = ({ children }) => {
         <div className='flex h-screen'>
             <div className='flex'>
                 <nav className='flex w-1/3 shadow-md'>
-                    <Header />
+                    <Header menu={menu} />
                 </nav>
                 <main className='w-full p-24 overflow-x-hidden overflow-y-auto'>
                     {children}

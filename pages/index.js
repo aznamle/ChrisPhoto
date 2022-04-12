@@ -4,7 +4,7 @@ import { createClient } from "../prismicio"
 import { components } from "../slices/index.js";
 
 export default function Home({ data, slices}) {
-  
+
   return (
     <div>
       <SliceZone slices={slices} components={components} />
@@ -20,7 +20,7 @@ export async function getServerSideProps({ previewData }) {
 
   return {
     props: { 
-      homePage: data.data,
+      data: data.data,
       slices: data.data.slices,
     }, 
   }

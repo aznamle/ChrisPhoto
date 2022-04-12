@@ -1,9 +1,11 @@
 {
   "_cts": {
     "homepage": {},
-    "menu": {}
+    "menu": {},
+    "portfolio": {}
   },
   "slices": {
-    "SimpleText": {}
+    "SimpleText": {},
+    "Gallery": {}
   }
 }

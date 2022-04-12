@@ -1,12 +1,10 @@
 
 const Header = ({ menu }) => {
   return (
-    <div className='w-full h-full flex items-center justify-center'>
-        <div className='mx-auto '>
-            <div>
-            <span className='text-2xl'>PHOTOGRAPHY</span>
-            </div>
-            <span className='text-xl'>PHOTOGRAPHY</span>
+    <div className='w-full h-1/2 items-center justify-center'>
+        <div className='flex flex-col space-y-2'>
+            <span className='text-4xl font-semibold'>CHRIS PHOTOS</span>
+            <span className='text-2xl'>Photography</span>
         </div>
     </div>
   )

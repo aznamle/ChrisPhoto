@@ -5,10 +5,13 @@ const Header = ({ menu }) => {
   console.log(menu.data.portfolioLinks)
 
   return (
-    <div className='mx-auto flex items-center justify-between'>
-        <div className='flex flex-col space-y-2 '>
+    <div className='mx-auto flex items-center'>
+        <div className='justify-between'>
+          <div className="flex flex-col">
             <span className='text-4xl font-semibold'>CHRIS PHOTOS</span>
             <span className='text-2xl'>Photography</span>
+          </div>
+          <div>
             <ul>
               {menu?.data?.portfolioLinks.map((portfolioLink, i) => (
                 <li key={portfolioLink.Link.id}>
@@ -18,6 +21,7 @@ const Header = ({ menu }) => {
                 </li>
               ))}
             </ul>
+          </div>
         </div>
         
 

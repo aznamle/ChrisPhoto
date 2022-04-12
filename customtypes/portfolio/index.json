@@ -28,6 +28,9 @@
           "choices": {
             "simple_text": {
               "type": "SharedSlice"
+            },
+            "gallery": {
+              "type": "SharedSlice"
             }
           }
         }

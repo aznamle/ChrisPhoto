@@ -13,7 +13,7 @@ const Layout = ({ children, menu }) => {
         </Head>
         <div className='flex h-screen'>
             <div className='flex'>
-                <nav className='flex w-1/3 shadow-md'>
+                <nav className='flex w-1/3'>
                     <Header menu={menu} />
                 </nav>
                 <main className='w-full p-24 overflow-x-hidden overflow-y-auto'>

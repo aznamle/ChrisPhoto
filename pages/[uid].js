@@ -19,11 +19,11 @@ export default Portfolio
 export async function getStaticProps({ params, previewData }) {
     const client = createClient({ previewData });
   
-    const page = await client.getByUID("portfolio", params.uid);
+    const pages = await client.getByUID("portfolio", params.uid);
   
     return {
       props: {
-        slices: page.data,
+        slices: pages.data.slices,
       },
     };
   }
@@ -34,7 +34,7 @@ export async function getStaticPaths() {
     const pages = await client.getAllByType("portfolio");
   
     return {
-      paths: pages.map((portfolio) => prismicH.asLink(portfolio, linkResolver)),
+      paths: pages.map((page) => prismicH.asLink(page, linkResolver)),
       fallback: false,
     };
   }

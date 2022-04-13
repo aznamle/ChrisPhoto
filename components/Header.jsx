@@ -1,5 +1,6 @@
 import { PrismicLink, PrismicRichText } from "@prismicio/react"
 import Link from 'next/link';
+import Image from "next/image";
 import { AiFillInstagram } from 'react-icons/ai'
 
 const Header = ({ menu }) => {
@@ -11,7 +12,7 @@ const Header = ({ menu }) => {
 
         <div className="flex space-x-2 items-center">
           <div className=''>
-            <img className='rounded-full' src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png' />
+            <Image className='rounded-full' src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png' width={250} height={250} />
           </div>
           <div className="flex flex-col">
             <Link href='/'>

@@ -4,13 +4,14 @@ import * as prismicH from "@prismicio/helpers";
 import { createClient, linkResolver } from "../prismicio";
 import { components } from "../slices";
 
+import Layout from '../components/Layout'
 
-const Portfolio = ({ slices }) => {
+const Portfolio = ({ menu, slices }) => {
 
   return (
-    <div>
+    <Layout menu={menu}>
         <SliceZone slices={slices} components={components} />
-    </div>
+    </Layout>
   )
 }
 
@@ -18,11 +19,13 @@ export default Portfolio
 
 export async function getStaticProps({ params, previewData }) {
     const client = createClient({ previewData });
-  
+    
+    const menu = await client.getSingle("menu");
     const pages = await client.getByUID("portfolio", params.uid);
   
     return {
       props: {
+        menu: menu,
         slices: pages.data.slices,
       },
     };

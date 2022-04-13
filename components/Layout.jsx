@@ -12,11 +12,11 @@ const Layout = ({ children, menu }) => {
             <title>Chris Photography</title>
         </Head>
         <div className='flex h-screen'>
-            <div className='flex'>
-                <nav className='flex w-1/3'>
+            <div className='md:flex h-full'>
+                <nav className='w-1/4 flex mx-auto p-12'>
                     <Header menu={menu} />
                 </nav>
-                <main className='w-full p-24 overflow-x-hidden overflow-y-auto'>
+                <main className='flex flex-col w-full p-12 overflow-x-hidden overflow-y-auto'>
                     {children}
                 </main>
             </div>

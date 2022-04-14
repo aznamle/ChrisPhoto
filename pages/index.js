@@ -27,6 +27,5 @@ export async function getServerSideProps({ previewData }) {
       data: data.data,
       slices: data.data.slices,
     }, 
-    revalidate: 10
   }
 }

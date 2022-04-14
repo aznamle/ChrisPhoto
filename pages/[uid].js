@@ -28,7 +28,6 @@ export async function getStaticProps({ params, previewData }) {
         menu: menu,
         slices: pages.data.slices,
       },
-      revalidate: 10
     };
   }
 

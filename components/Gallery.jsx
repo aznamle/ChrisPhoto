@@ -25,7 +25,7 @@ const Gallery = ({ slice }) => {
 
                     {slice.items.map((item, i) => (
 
-                        <div key={i} className="flex relative overflow-hidden lg:w-1/2 p-2">
+                        <div key={i} className="flex relative overflow-hidden lg:w-1/3 p-2">
                                 <Image src={item.image.url} width={item.image.dimensions.width} height={item.image.dimensions.height} alt={item.image.alt}
                                 className='w-full object-cover h-full object-center block transform duration-300 ease-in-out hover:scale-105'
                                 />

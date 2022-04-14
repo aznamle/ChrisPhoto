@@ -43,18 +43,29 @@ const Header = ({ menu }) => {
 
       <div className='block md:hidden'>
         <div className='flex items-center justify-between bg-white flex-wrap p-6 shadow-md top-0 fixed inset-x-0 z-40'>
-        <div>
-        <Link href='/'>
-              <a className='text-2xl tracking-wider'>
-                @ChrisForonda
-              </a>
-            </Link>
-        </div>
-        <div className="block lg:hidden">
-          <button onClick={() => toggleExpansion(!isExpanded)} className={`flex items-center px-3 py-3 rounded hover:text-gray-200 hover:border-black transition ease-in-out duration-500`}>
-            <svg className="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" ><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-          </button>
-        </div>
+          <div>
+          <Link href='/'>
+                <a className='text-2xl tracking-wider'>
+                  @ChrisForonda
+                </a>
+              </Link>
+          </div>
+          <div className="block lg:hidden">
+            <button onClick={() => toggleExpansion(!isExpanded)} className={`flex items-center px-3 py-3 rounded hover:text-gray-200 hover:border-black transition ease-in-out duration-500`}>
+              <svg className="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" ><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+            </button>
+          </div>
+          <div className={`${ isExpanded ? `block` : `hidden` } w-full mt-4 transition ease-in-out duration-300`}>
+            <ul>
+              {menu?.data?.portfolioLinks.map((portfolioLink, i) => (
+                <li key={portfolioLink.Link.id}>
+                  <PrismicLink field={portfolioLink.Link} className='text-lg text-black hover:text-gray-400 duration-200'>
+                    <PrismicRichText field={portfolioLink.portfolioTitle} />
+                  </PrismicLink>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
 
       </div>

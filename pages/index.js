@@ -14,7 +14,7 @@ export default function Home({ menu, data, slices}) {
   )
 }
 
-export async function getServerSideProps({ previewData }) {
+export async function getStaticProps({ previewData }) {
 
   const client = createClient({ previewData })
 
@@ -27,5 +27,6 @@ export async function getServerSideProps({ previewData }) {
       data: data.data,
       slices: data.data.slices,
     }, 
+    revalidate: 10,
   }
 }

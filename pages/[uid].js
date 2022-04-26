@@ -28,6 +28,7 @@ export async function getStaticProps({ params, previewData }) {
         menu: menu,
         slices: pages.data.slices,
       },
+      revalidate: 10,
     };
   }
 
@@ -38,6 +39,6 @@ export async function getStaticPaths() {
   
     return {
       paths: pages.map((page) => prismicH.asLink(page, linkResolver)),
-      fallback: false,
+      fallback: 'blocking',
     };
   }

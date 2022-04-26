@@ -5,11 +5,44 @@
   "status": true,
   "json": {
     "Main": {
+      "icon": {
+        "type": "Image",
+        "config": {
+          "label": "Icon",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
       "title": {
         "type": "StructuredText",
         "config": {
           "placeholder": "Menu title...",
           "single": "heading1"
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "social1": {
+        "type": "Link",
+        "config": {
+          "label": "Social1",
+          "placeholder": "",
+          "select": null
+        }
+      },
+      "social2": {
+        "type": "Link",
+        "config": {
+          "label": "Social2",
+          "placeholder": "",
+          "select": null
         }
       },
       "menuLinks": {

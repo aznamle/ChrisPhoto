@@ -2,7 +2,8 @@
   "_cts": {
     "homepage": {},
     "menu": {},
-    "portfolio": {}
+    "portfolio": {},
+    "about": {}
   },
   "slices": {
     "SimpleText": {},

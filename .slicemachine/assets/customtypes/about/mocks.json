@@ -1,6 +1,30 @@
 {
-  "id": "977b9957-4c89-4a90-95a7-dc94f34d4db5",
-  "uid": "et-perferendis-omnis",
+  "id": "68b8dcb3-26e0-4b6f-9d4d-6319b43e7a6f",
+  "uid": "ducimus-officia-dolorum",
   "type": "about",
-  "data": {}
+  "data": {
+    "image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
+    },
+    "title": [
+      {
+        "type": "paragraph",
+        "text": "Aliquip et tempor aute ad consequat dolor eiusmod nulla id pariatur. Ut veniam commodo voluptate qui Lorem deserunt ex incididunt. Fugiat ut mollit sit et tempor duis aute reprehenderit aliqua.",
+        "spans": []
+      }
+    ],
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Lorem aliquip amet eiusmod mollit velit et laboris laborum cupidatat consectetur ullamco sint reprehenderit nisi. Ea cupidatat cillum commodo officia duis reprehenderit consectetur dolore velit sint consequat irure cillum ex est. Ad laborum dolor do dolor duis eu nostrud cillum.",
+        "spans": []
+      }
+    ]
+  }
 }

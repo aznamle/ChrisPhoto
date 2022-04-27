@@ -2,7 +2,7 @@ import { useState } from "react";
 import { PrismicLink, PrismicRichText } from "@prismicio/react"
 import Link from 'next/link';
 import Image from "next/image";
-import { AiFillInstagram } from 'react-icons/ai'
+import { AiFillInstagram, AiFillLinkedin } from 'react-icons/ai'
 
 const Header = ({ menu }) => {
 
@@ -24,7 +24,10 @@ const Header = ({ menu }) => {
               </a>
             </Link>
             <span className='text-xl'>Photography</span>
-            <AiFillInstagram className='text-2xl'/>
+            <div className='flex flex-row space-x-1'>
+            <AiFillInstagram className='text-3xl'/>
+            <AiFillLinkedin className='text-3xl'/>
+            </div>
           </div>
         </div>
         

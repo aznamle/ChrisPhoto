@@ -62,7 +62,7 @@ const Header = ({ menu }) => {
             <ul>
               {menu?.data?.portfolioLinks.map((portfolioLink, i) => (
                 <li key={portfolioLink.Link.id}>
-                  <PrismicLink field={portfolioLink.Link} className='text-lg text-black hover:text-gray-400 duration-200'>
+                  <PrismicLink field={portfolioLink.Link} onClick={closeMobileMenu} className='text-lg text-black hover:text-gray-400 duration-200'>
                     <PrismicRichText field={portfolioLink.portfolioTitle} />
                   </PrismicLink>
                 </li>

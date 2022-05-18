@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import { AiFillInstagram, AiFillLinkedin, AiOutlineDown } from 'react-icons/ai'
 import { BsChevronDown } from 'react-icons/bs'
+import { data } from "autoprefixer";
 
 const Header = ({ menu }) => {
 
@@ -18,15 +19,17 @@ const Header = ({ menu }) => {
 
         <div className="flex space-x-2 items-center">
           <div className=''>
-            <Image className='rounded-full' src='https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png' width={150} height={150} />
+            <Image className='rounded-full' src={menu.data.icon.url} width={150} height={150} />
           </div>
           <div className="flex flex-col">
             <Link href='/'>
               <a className='text-2xl tracking-wider'>
-                @ChrisForonda
+              <PrismicRichText field={menu.data.title} />
               </a>
             </Link>
-            <span className='text-xl'>Photography</span>
+            <span className='text-xl'>
+              <PrismicRichText field={menu.data.description} />
+            </span>
             <div className='flex flex-row space-x-1'>
             <AiFillInstagram className='text-3xl'/>
             <AiFillLinkedin className='text-3xl'/>

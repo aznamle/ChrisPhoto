@@ -1,10 +1,11 @@
-import React from 'react'
-import { PrismicRichText } from '@prismicio/react'
+import GalleryComponent from '../../components/GalleryComponent'
 
-const Gallery = ({ slice }) => (
-  <section>
-    
-  </section>
-)
+const Gallery = ({ slice }) => {
+  return (
+    <>
+      <GalleryComponent slice={slice} />
+    </>
+  )
+}
 
 export default Gallery

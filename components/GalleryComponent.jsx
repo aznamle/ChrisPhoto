@@ -2,7 +2,7 @@ import Section from './Section'
 import Image from 'next/image'
 import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox'
 
-const Gallery = ({ slice }) => {
+const GalleryComponent = ({ slice }) => {
 
     const options = {
         buttons: {
@@ -26,7 +26,7 @@ const Gallery = ({ slice }) => {
                     {slice.items.map((item, i) => (
 
                         <div key={i} className="flex relative overflow-hidden lg:w-1/2 p-2">
-                                <Image src={item.image.url} width={item.image.dimensions.width} height={item.image.dimensions.height}
+                                <Image src={item.image.url} width={item.image.dimensions.width} height={item.image.dimensions.height} priority
                                 className='w-full object-cover h-full object-center block transform duration-300 ease-in-out hover:scale-105'
                                 />
                         </div>
@@ -37,4 +37,4 @@ const Gallery = ({ slice }) => {
     )
 }
 
-export default Gallery
+export default GalleryComponent

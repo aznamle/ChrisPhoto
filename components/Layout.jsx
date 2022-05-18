@@ -10,6 +10,11 @@ const Layout = ({ children, menu }) => {
     <div className=''>
         <Head>
             <title>Chris Photography</title>
+            <meta name="description" content="Cjfotography" />
+            <link
+                rel="icon"
+                href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📷</text></svg>"
+            />
         </Head>
         <div className='flex h-screen'>
             <div className='md:flex h-full'>

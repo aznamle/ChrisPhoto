@@ -1,6 +1,5 @@
 import { PrismicLink, PrismicRichText } from "@prismicio/react"
 
-
 const About = ({ slice }) => {
   return (
     <div className="">

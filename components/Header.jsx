@@ -6,7 +6,6 @@ import { AiFillInstagram, AiFillLinkedin, AiOutlineInstagram, AiOutlineLinkedin 
 import { BsChevronDown } from 'react-icons/bs'
 
 const Header = ({ menu }) => {
-  console.log(menu)
 
   const [isExpanded, toggleExpansion] = useState(false)
   const closeMobileMenu = () => toggleExpansion(false)

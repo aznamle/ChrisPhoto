@@ -1,6 +1,116 @@
 {
   "slices": {
     "components": {
+      "about": {
+        "library": "slices",
+        "id": "about",
+        "name": "About",
+        "description": "About",
+        "model": {
+          "id": "about",
+          "type": "SharedSlice",
+          "name": "About",
+          "description": "About",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "About",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                },
+                "subtitle": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Subtitle",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {
+                "text": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Text",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "about",
+            "items": [
+              {
+                "text": [
+                  {
+                    "type": "paragraph",
+                    "text": "In culpa reprehenderit ad laboris nulla excepteur proident irure mollit consequat velit mollit.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "text": [
+                  {
+                    "type": "paragraph",
+                    "text": "Amet ea consequat mollit laborum veniam aute irure. Laboris duis do aute qui Lorem officia qui mollit proident excepteur ad consectetur id consectetur do. Non non incididunt sint et cillum fugiat fugiat excepteur nulla enim ipsum exercitation adipisicing non.",
+                    "spans": []
+                  }
+                ]
+              },
+              {
+                "text": [
+                  {
+                    "type": "paragraph",
+                    "text": "Consequat cupidatat consectetur mollit excepteur nostrud non excepteur ipsum nulla quis velit. Consequat ad consectetur et officia nisi culpa proident irure cupidatat elit commodo officia nisi anim nisi.",
+                    "spans": []
+                  }
+                ]
+              }
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Commodo aliqua ad eiusmod in sint non nostrud do elit duis.",
+                  "spans": []
+                }
+              ],
+              "subtitle": [
+                {
+                  "type": "paragraph",
+                  "text": "Cupidatat ex consequat voluptate sunt non commodo nulla elit mollit enim consectetur. Ex elit consequat amet ullamco amet in excepteur cupidatat ut ad tempor occaecat.",
+                  "spans": []
+                }
+              ]
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "gallery": {
         "library": "slices",
         "id": "gallery",

@@ -21,14 +21,16 @@ const GalleryComponent = ({ slice }) => {
     return (
         <SimpleReactLightbox>
             <SRLWrapper options={options}>
-                <div className="flex flex-col justify-center items-center mx-auto">
-
+                <div className="columns-1 md:columns-3 gap-3 space-y-2 mx-auto max-w-screen-2xl ">
                     {slice.items.map((item, i) => (
-
-                        <div key={i} className="flex relative overflow-hidden lg:w-1/2 p-2">
-                                <Image src={item.image.url} width={item.image.dimensions.width} height={item.image.dimensions.height} priority
-                                className='w-full object-cover h-full object-center block transform duration-300 ease-in-out hover:scale-105'
-                                />
+                        <div key={i} className="break-inside-avoid mx-auto">
+                            <Image 
+                                src={item.image.url} 
+                                width={item.image.dimensions.width} 
+                                height={item.image.dimensions.height} priority
+                                className='bg-gray-200 w-full object-cover h-full object-center block transform duration-300 ease-in-out hover:scale-105'
+                                onContextMenu={(e)=>e.preventDefault()}
+                            />
                         </div>
                     ))}
                 </div>

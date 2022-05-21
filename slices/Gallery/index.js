@@ -4,7 +4,9 @@ import Section from '../../components/Section'
 const Gallery = ({ slice }) => {
   return (
     <>
-      <GalleryComponent slice={slice} />
+      <Section>
+        <GalleryComponent slice={slice} />
+      </Section>
     </>
   )
 }

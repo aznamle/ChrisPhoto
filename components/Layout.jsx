@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 import Header from './Header'
 import Footer from './Footer'
+import ScrollToTop from './ScrollTopTop'
 
 const Layout = ({ children, menu }) => {
 
@@ -21,10 +22,11 @@ const Layout = ({ children, menu }) => {
                 <nav className='p-8'>
                     <Header menu={menu} />
                 </nav>
-                <main className='items-center w-full h-full mt-12 md:mt-6'>
+                <main className='items-center w-full h-full mt-6'>
                     {children}
                 </main>
             </div>
+            <ScrollToTop />
             <Footer />
         </div>
     </div>

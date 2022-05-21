@@ -6,12 +6,12 @@ import { AiFillInstagram, AiFillLinkedin, AiOutlineInstagram, AiOutlineLinkedin 
 import { BsChevronDown } from 'react-icons/bs'
 
 const Header = ({ menu }) => {
+  console.log(menu)
 
   const [isExpanded, toggleExpansion] = useState(false)
   const closeMobileMenu = () => toggleExpansion(false)
-
   const [linkMenu, toggleLinkMenu] = useState(false)
-  console.log(menu)
+
   return (
     <div className=''>
       <div className='hidden md:block max-w-5xl mx-auto'>
@@ -56,8 +56,16 @@ const Header = ({ menu }) => {
               </div>
               </div>
               <div className='flex justify-end text-gray-500 space-x-4'>
-                <AiFillInstagram size={20} className='hover:text-gray-900 duration-200'/>
-                <AiFillLinkedin size={20} className='hover:text-gray-900 duration-200'/>
+                <Link href={menu.data.social1.url} >
+                  <a target="_blank" rel="noopener noreferrer">
+                    <AiFillInstagram size={20} className='hover:text-gray-900 duration-200'/>
+                  </a>
+                </Link>
+                <Link href={menu.data.social2.url} >
+                  <a target="_blank" rel="noopener noreferrer">
+                    <AiFillLinkedin size={20} className='hover:text-gray-900 duration-200'/>
+                  </a>
+                </Link>
               </div>
             </div>
 
@@ -75,7 +83,7 @@ const Header = ({ menu }) => {
           <div>
           <Link href='/'>
                 <a className='text-7xl font-bold italic'>
-                  CJF
+                  <PrismicRichText field={menu.data.title} /> 
                 </a>
               </Link>
           </div>
@@ -84,7 +92,7 @@ const Header = ({ menu }) => {
               <svg className="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" ><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
             </button>
           </div>
-          <div className={`${ isExpanded ? `block` : `hidden` } w-full h-screen mt-4 px-4 space-y-2`}>
+          <div className={`${ isExpanded ? `block` : `hidden` } w-full h-screen mt-4 items-center space-y-2`}>
 
             <div className="mt-6">
             <div className="flex mx-auto items-center text-2xl hover:text-gray-400 duration-200" onClick={()=> toggleLinkMenu(!linkMenu)}>
@@ -103,23 +111,32 @@ const Header = ({ menu }) => {
             </div>
             
             <div>
-            <ul>
-              {menu?.data?.menuLinks.map((menuLink) => (
-                <li key={menuLink.link.id}>
-                  <PrismicLink field={menuLink.link} onClick={closeMobileMenu} className='text-2xl text-black hover:text-gray-400 duration-200'>
-                    <PrismicRichText field={menuLink.label} />
-                  </PrismicLink>
-                </li>
-              ))}
-            </ul>
+              <ul className="space-y-1">
+                {menu?.data?.menuLinks.map((menuLink) => (
+                  <li key={menuLink.link.id}>
+                    <PrismicLink field={menuLink.link} onClick={closeMobileMenu} className='text-2xl text-black hover:text-gray-400 duration-200'>
+                      <PrismicRichText field={menuLink.label} />
+                    </PrismicLink>
+                  </li>
+                ))}
+              </ul>
             </div>
 
             <div className='p-6 flex flex-col mx-auto items-center text-center py-20 space-y-2'>
-            <div className='flex mx-auto text-gray-500 space-x-4'>
-            <AiFillInstagram size={30} className='hover:text-gray-900 duration-300'/>
-            <AiFillLinkedin size={30} className='hover:text-gray-900 duration-300'/>
+              <div className='flex mx-auto text-gray-500 space-x-4'>
+                <Link href={menu.data.social1.url} >
+                    <a target="_blank" rel="noopener noreferrer">
+                      <AiFillInstagram size={20} className='hover:text-gray-900 duration-200'/>
+                    </a>
+                  </Link>
+                  <Link href={menu.data.social2.url} >
+                    <a target="_blank" rel="noopener noreferrer">
+                      <AiFillLinkedin size={20} className='hover:text-gray-900 duration-200'/>
+                    </a>
+                  </Link>
+              </div>
             </div>
-          </div>
+
           </div>
         </div>
 

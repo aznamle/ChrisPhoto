@@ -21,7 +21,7 @@ const GalleryComponent = ({ slice }) => {
     return (
         <SimpleReactLightbox>
             <SRLWrapper options={options}>
-                <div className="columns-1 md:columns-3 gap-3 space-y-2 mx-auto max-w-screen-2xl ">
+                <div className="columns-1 md:columns-3 gap-3 space-y-2 mx-auto max-w-screen-2xl py-12 md:py-0 px-4 md:px-0">
                     {slice.items.map((item, i) => (
                         <div key={i} className="break-inside-avoid mx-auto">
                             <Image 

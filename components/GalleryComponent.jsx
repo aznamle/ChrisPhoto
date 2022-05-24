@@ -29,6 +29,7 @@ const GalleryComponent = ({ slice }) => {
                                 width={item.image.dimensions.width} 
                                 height={item.image.dimensions.height} priority
                                 className='bg-gray-200 w-full object-cover h-full object-center block transform duration-300 ease-in-out hover:scale-105'
+                                alt=''
                                 onContextMenu={(e)=>e.preventDefault()}
                             />
                         </div>

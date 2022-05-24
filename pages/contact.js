@@ -10,7 +10,7 @@ import Layout from "../components/Layout";
 import toast, { Toaster } from 'react-hot-toast';
 
 
-const contact = ({ menu, data, slices }) => {
+const Contact = ({ menu, data, slices }) => {
 
   const form = useRef();
   const notify = () => toast('✅ Email sucessfully sent!');
@@ -39,23 +39,23 @@ const contact = ({ menu, data, slices }) => {
 
     <div className="max-w-5xl mx-auto flex flex-col w-full p-8 mt-8">
       <h2 className="text-gray-900 text-lg mb-1 font-medium title-font">Contact me!</h2>
-      <p className="leading-relaxed mb-5 text-gray-600">Lets shoot! Hit me up if you're interested in working together or have any questions!</p>
+      <p className="leading-relaxed mb-5 text-gray-600">Lets shoot! Hit me up if you are interested in working together or have any questions!</p>
       <form ref={form} onSubmit={sendEmail}>
       <div className="relative mb-4">
-        <label for="name" className="leading-7 text-sm text-gray-600">Name *</label>
+        <label className="leading-7 text-sm text-gray-600">Name *</label>
         <input type="text" name="user_name" required className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
       </div>
       <div className="relative mb-4">
-        <label for="email" className="leading-7 text-sm text-gray-600">Email Address *</label>
+        <label className="leading-7 text-sm text-gray-600">Email Address *</label>
         <input type="email" name="user_email" required className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
       </div>
       <div className="relative mb-4">
-        <label for="name" className="leading-7 text-sm text-gray-600">Phone Number </label>
+        <label className="leading-7 text-sm text-gray-600">Phone Number </label>
         <input type="tel" name="user_phone" className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
       </div>
       <div className="relative mb-4">
-        <label for="message" className="leading-7 text-sm text-gray-600">Message *</label>
-        <textarea id="message" name="message" required className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+        <label className="leading-7 text-sm text-gray-600">Message *</label>
+        <textarea name="message" required className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
       </div>
       <div className='flex mx-auto'>
       <button className="w-1/3 text-white 
@@ -70,7 +70,7 @@ const contact = ({ menu, data, slices }) => {
   )
 }
 
-export default contact
+export default Contact
 
 export async function getStaticProps({ previewData }) {
 

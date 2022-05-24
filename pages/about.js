@@ -3,6 +3,7 @@ import { SliceZone } from "@prismicio/react";
 import { createClient } from "../prismicio"
 import { components } from "../slices/index.js";
 import Image from "next/image";
+import Section from "../components/Section";
 
 import Layout from "../components/Layout";
 
